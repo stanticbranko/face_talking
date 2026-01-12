@@ -28,6 +28,12 @@ button{margin:15px 5px;padding:10px 20px;background:#38bdf8;border:none;border-r
     <div>
         <button id="microbitToggle">Connect Micro:bit</button>
         <button id="listenToggle">Start Listening</button>
+        <label for="langSelect" style="margin-left:8px;">Recognition:</label>
+        <select id="langSelect">
+            <option value="hr-HR">hr-HR (Croatian)</option>
+            <option value="sr-RS">sr-RS (Serbian)</option>
+            <option value="en-US">en-US (English)</option>
+        </select>
     </div>
 
     <div class="slider-container">
@@ -159,12 +165,13 @@ microbitToggle.onclick=async()=>{
 ====================================================== */
 const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 let rec=SR?new SR():null;
-let mic=true, timer=null;
+let mic=false, timer=null; // start as not listening until user gesture
 let conversationStarted=false;
 let lastQuestion="";
 
-if(rec){
-    rec.lang="hr-HR";
+// Setup recognition handlers but start only on user gesture
+function setupRecognitionHandlers(){
+    if(!rec) return;
     rec.continuous=true;
 
     rec.onresult=e=>{
@@ -189,41 +196,41 @@ if(rec){
     };
 
     rec.onend = ()=>{
-        // Ako recognition nehotice stane, restartuj ga kad smo u listening modu
         if(mic && mode!=="speaking"){
             console.log("SpeechRecognition end -> restarting");
             try{ rec.start(); }catch(e){ console.warn("Restart failed:", e); }
         }
     };
-
-    // NOTE: On many Android browsers the microphone cannot be opened
-    // by two different APIs at once (WebAudio + SpeechRecognition).
-    // And starting recognition without a user gesture is often blocked.
-    // Require an explicit user click to start listening to avoid conflicts.
-    const listenToggle=document.getElementById("listenToggle");
-    listenToggle.onclick=async()=>{
-        if(!rec){ alert("SpeechRecognition not supported in this browser."); return; }
-        if(!mic){
-            try{
-                await initAudio(); // user gesture - allows AudioContext and getUserMedia
-                rec.start();
-                mic=true;
-                mode="listening";
-                listenToggle.textContent="Stop Listening";
-            }catch(e){
-                console.warn("Failed to start recognition:", e);
-                alert("Unable to start microphone. Check permissions and try again.");
-            }
-        }else{
-            try{ rec.stop(); }catch(e){}
-            mic=false;
-            mode="idle";
-            listenToggle.textContent="Start Listening";
-            if(audioCtx && audioCtx.state!=="closed"){ try{ await audioCtx.close(); }catch(e){} }
-            audioEnabled=false;
-        }
-    };
 }
+
+const listenToggle=document.getElementById("listenToggle");
+const langSelect=document.getElementById("langSelect");
+
+listenToggle.onclick=async()=>{
+    if(!rec){ alert("SpeechRecognition not supported in this browser. Try Chrome on desktop."); return; }
+    if(!mic){
+        // user starts listening: initialize audio and recognition with selected language
+        try{
+            await initAudio();
+            rec.lang = langSelect.value || "hr-HR";
+            setupRecognitionHandlers();
+            rec.start();
+            mic=true;
+            mode="listening";
+            listenToggle.textContent="Stop Listening";
+        }catch(e){
+            console.warn("Failed to start recognition:", e);
+            alert("Unable to start microphone/recognition. Check permissions.");
+        }
+    }else{
+        try{ rec.stop(); }catch(e){}
+        mic=false;
+        mode="idle";
+        listenToggle.textContent="Start Listening";
+        if(audioCtx && audioCtx.state!=="closed"){ try{ await audioCtx.close(); }catch(e){} }
+        audioEnabled=false;
+    }
+};
 
 const speedSlider=document.getElementById("speedSlider");
 const speedValue=document.getElementById("speedValue");
