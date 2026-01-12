@@ -27,6 +27,7 @@ button{margin:15px 5px;padding:10px 20px;background:#38bdf8;border:none;border-r
 
     <div>
         <button id="microbitToggle">Connect Micro:bit</button>
+        <button id="listenToggle">Start Listening</button>
     </div>
 
     <div class="slider-container">
@@ -195,7 +196,33 @@ if(rec){
         }
     };
 
-    initAudio().then(()=>rec.start());
+    // NOTE: On many Android browsers the microphone cannot be opened
+    // by two different APIs at once (WebAudio + SpeechRecognition).
+    // And starting recognition without a user gesture is often blocked.
+    // Require an explicit user click to start listening to avoid conflicts.
+    const listenToggle=document.getElementById("listenToggle");
+    listenToggle.onclick=async()=>{
+        if(!rec){ alert("SpeechRecognition not supported in this browser."); return; }
+        if(!mic){
+            try{
+                await initAudio(); // user gesture - allows AudioContext and getUserMedia
+                rec.start();
+                mic=true;
+                mode="listening";
+                listenToggle.textContent="Stop Listening";
+            }catch(e){
+                console.warn("Failed to start recognition:", e);
+                alert("Unable to start microphone. Check permissions and try again.");
+            }
+        }else{
+            try{ rec.stop(); }catch(e){}
+            mic=false;
+            mode="idle";
+            listenToggle.textContent="Start Listening";
+            if(audioCtx && audioCtx.state!=="closed"){ try{ await audioCtx.close(); }catch(e){} }
+            audioEnabled=false;
+        }
+    };
 }
 
 const speedSlider=document.getElementById("speedSlider");
