@@ -27,13 +27,6 @@ button{margin:15px 5px;padding:10px 20px;background:#38bdf8;border:none;border-r
 
     <div>
         <button id="microbitToggle">Connect Micro:bit</button>
-        <button id="listenToggle">Start Listening</button>
-        <label for="langSelect" style="margin-left:8px;">Recognition:</label>
-        <select id="langSelect">
-            <option value="hr-HR">hr-HR (Croatian)</option>
-            <option value="sr-RS">sr-RS (Serbian)</option>
-            <option value="en-US">en-US (English)</option>
-        </select>
     </div>
 
     <div class="slider-container">
@@ -165,90 +158,51 @@ microbitToggle.onclick=async()=>{
 ====================================================== */
 const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 let rec=SR?new SR():null;
-let mic=false, timer=null; // Start as false; only true after user clicks Start
+let mic=true, timer=null;
 let conversationStarted=false;
 let lastQuestion="";
 
-function setupRecognitionHandlers(){
-    if(!rec) return;
+if(rec){
+    rec.lang="hr-HR";
     rec.continuous=true;
 
     rec.onresult=e=>{
         if(!mic) return;
         const q=[...e.results].map(r=>r[0].transcript).join(" ").trim();
-        console.log("Recognized:", q, "mic=", mic);
         if(q.length===0) return;
 
         if(!conversationStarted && q.toLowerCase().includes("zdravo")){
-            console.log("Conversation started");
             conversationStarted=true;
         }
         if(conversationStarted){
             if(q !== lastQuestion){
                 lastQuestion = q;
-                console.log("Adding user message:", q);
                 addMsg(q,"user");
                 schedule(q);
             }
         }
         if(q.toLowerCase().includes("hvala za sada")){
-            console.log("Conversation ended");
             conversationStarted=false;
             lastQuestion="";
         }
     };
 
     rec.onend = ()=>{
-        console.log("rec.onend: mic=", mic, "mode=", mode);
+        // Ako recognition nehotice stane, restartuj ga kad smo u listening modu
         if(mic && mode!=="speaking"){
             console.log("SpeechRecognition end -> restarting");
             try{ rec.start(); }catch(e){ console.warn("Restart failed:", e); }
         }
     };
-    
-    rec.onerror = (e)=>{
-        console.error("SpeechRecognition error:", e.error);
-    };
+
+    initAudio().then(()=>rec.start());
 }
-
-const listenToggle=document.getElementById("listenToggle");
-const langSelect=document.getElementById("langSelect");
-
-listenToggle.onclick=async()=>{
-    if(!rec){ alert("SpeechRecognition not supported. Try Chrome on Android."); return; }
-    if(!mic){
-        try{
-            console.log("Starting listening...");
-            await initAudio();
-            rec.lang = langSelect.value || "hr-HR";
-            console.log("Using language:", rec.lang);
-            setupRecognitionHandlers();
-            rec.start();
-            mic=true;
-            mode="listening";
-            listenToggle.textContent="Stop Listening";
-            console.log("Listening started, qaDB loaded:", qaDB.length > 0);
-        }catch(e){
-            console.error("Failed to start:", e);
-            alert("Unable to start microphone/recognition: " + e.message);
-        }
-    }else{
-        console.log("Stopping listening...");
-        try{ rec.stop(); }catch(e){}
-        mic=false;
-        mode="idle";
-        listenToggle.textContent="Start Listening";
-        if(audioCtx && audioCtx.state!=="closed"){ try{ await audioCtx.close(); }catch(e){} }
-        audioEnabled=false;
-    }
-};
 
 const speedSlider=document.getElementById("speedSlider");
 const speedValue=document.getElementById("speedValue");
 speedSlider.oninput=()=>speedValue.textContent=speedSlider.value;
 
 function speak(text){
-    console.log("speak() called with:", text);
     mode="speaking";
     try{rec.stop();}catch(e){}
     speechSynthesis.cancel();
@@ -273,9 +227,7 @@ function speak(text){
     const u=new SpeechSynthesisUtterance(text);
     u.lang="hr-HR";
     u.rate=speechRate;
-    u.onstart=()=>console.log("Speech synthesis started");
     u.onend=()=>{
-        console.log("Speech synthesis ended");
         mode="listening";
         if(mic){
             setTimeout(()=>{
@@ -288,8 +240,6 @@ function speak(text){
             },500);
         }
     };
-    u.onerror=(e)=>console.error("Speech synthesis error:", e.error);
-    console.log("Calling speechSynthesis.speak()");
     speechSynthesis.speak(u);
 }
 
@@ -297,12 +247,7 @@ function schedule(q){
     mode="listening";
     clearTimeout(timer);
     timer=setTimeout(()=>{
-        console.log("schedule: calling answer for:", q);
-        if(qaDB.length===0){
-            console.warn("qaDB is empty! db.json may not have loaded.");
-        }
         const a=answer(q);
-        console.log("Got answer:", a);
         addMsg(a,"ai");
         speak(a);
     },500);
