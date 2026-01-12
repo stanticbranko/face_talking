@@ -1,0 +1,100 @@
+[
+  {
+    "question": "Ko je napisao Gorski vijenac?",
+    "alternatives": ["Ko je autor Gorskog vijenca?", "Ko je napisao pesničko delo Gorski vijenac?"],
+    "tags": ["književnost", "Njegoš"],
+    "answer": "Njegoš, pesnik i vladika – pravi multitasker!"
+  },
+  {
+    "question": "Koliko iznosi zbir uglova u trouglu?",
+    "alternatives": ["Koji je zbir uglova u trouglu?", "Koliko stepeni imaju uglovi u trouglu?"],
+    "tags": ["matematika", "geometrija"],
+    "answer": "Zbir je 180 stepeni, kao krug isečen na pola!"
+  },
+  {
+    "question": "Ko je formulisao zakon gravitacije?",
+    "alternatives": ["Ko je otkrio gravitaciju?", "Ko je napisao zakon gravitacije?"],
+    "tags": ["fizika", "Newton"],
+    "answer": "Isak Njutn, jabuka mu je pala na glavu i sve objasnio!"
+  },
+  {
+    "question": "Koja je hemijska oznaka za natrijum?",
+    "alternatives": ["Kako se piše natrijum?", "Koja je formula za natrijum?"],
+    "tags": ["hemija", "elementi"],
+    "answer": "Na – kao 'Na-na' pesma, ali hemijska!"
+  },
+  {
+    "question": "Koja kost štiti mozak?",
+    "alternatives": ["Koja kost se nalazi u glavi?", "Koja kost čuva mozak?"],
+    "tags": ["biologija", "ljudsko telo"],
+    "answer": "Lobanja, moj tvrdi šlem!"
+  },
+  {
+    "question": "Koja je najviša planina na svetu?",
+    "alternatives": ["Koja planina je najviša?", "Kako se zove najviša planina?"],
+    "tags": ["geografija", "planine"],
+    "answer": "Mont Everest, planina koja voli da bude na vrhu!"
+  },
+  {
+    "question": "Ko je bio prvi srpski kralj?",
+    "alternatives": ["Ko je prvi kralj Srbije?", "Ko je bio prvi vladar Srbije?"],
+    "tags": ["istorija", "Srbija"],
+    "answer": "Stefan Prvovenčani, prvi sa krunom na glavi!"
+  },
+  {
+    "question": "Ko je naslikao Sunce i polje suncokreta?",
+    "alternatives": ["Ko je autor slike suncokreta?", "Ko je naslikao suncokrete?"],
+    "tags": ["likovno", "Van Gog"],
+    "answer": "Vincent van Gog, čovek koji je voleo žuto!"
+  },
+  {
+    "question": "Koji instrument ima dirke i pedale?",
+    "alternatives": ["Koji instrument ima klavijaturu?", "Koji instrument ima pedale?"],
+    "tags": ["muzičko", "instrumenti"],
+    "answer": "Klavir, moj veliki muzički prijatelj!"
+  },
+  {
+    "question": "Šta znači skraćenica CPU?",
+    "alternatives": ["Šta je CPU?", "Šta znači centralna jedinica?"],
+    "tags": ["informatika", "računari"],
+    "answer": "Central Processing Unit – mozak računara!"
+  },
+
+  {
+    "question": "Zdravo!",
+    "alternatives": ["Ćao!", "Dobar dan!"],
+    "answer": "Zdravo, kako ti danas mogu pomoći?"
+  },
+  {
+    "question": "Hvala ti za sada!",
+    "answer": "Nema na čemu!"
+  },
+  {
+    "question": "Koliko metara ima jedan kilometar?",
+    "alternatives": ["Koliko je jedan kilometar?", "Hiljadu metara je koliko kilometara?"],
+    "tags": ["tehnika", "matematika"],
+    "answer": "Jedan kilometar ima hiljadu metara."
+  },
+{
+    "question": "Koji je glavni grad Srbije?",
+    "alternatives": [
+      "Glavni grad Srbije?",
+      "Najveći grad u Srbiji?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Glavni grad Srbije je Beograd."
+  },
+  {
+    "question": "Koliko ima stanovnika u Srbiji?",
+    "alternatives": [
+      "Koliko ljudi živi u Srbiji?",
+      "Broj stanovnika Srbije?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Procenjen broj stanovnika Srbije je oko 6,5 miliona stanovnika."
+  }
+]

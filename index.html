@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>School Chatbot</title>
+<style>
+html,body{margin:0;height:100%;background:#0f172a;color:white;font-family:Arial,sans-serif;}
+#app{height:100%;display:flex;flex-direction:column;align-items:center;padding:20px;}
+h1{margin:10px 0 0 0;font-size:2em;text-align:center;color:#38bdf8;}
+h2{margin:0 0 20px 0;font-size:1em;font-weight:normal;text-align:center;color:#cbd5e1;}
+#waveContainer{width:50%;height:100px;margin:40px 0 40px 0;}
+canvas{width:100%;height:100%;}
+button{margin:15px 5px;padding:10px 20px;background:#38bdf8;border:none;border-radius:8px;cursor:pointer;}
+#chat{width:100%;max-width:900px;display:flex;flex-direction:column;gap:10px;}
+.msg{padding:10px;border-radius:8px;background:#1e293b;}
+.user{align-self:flex-end;background:#2563eb;}
+.ai{align-self:flex-start;background:#334155;}
+.slider-container{margin-top:20px; display:flex; align-items:center; gap:10px; margin-bottom:30px;}
+</style>
+</head>
+<body>
+<div id="app">
+    <h1>School Chatbot</h1>
+    <h2>OŠ "Matija Gubec" Tavankut</h2>
+
+    <div id="waveContainer"><canvas id="wave"></canvas></div>
+
+    <div>
+        <button id="microbitToggle">Connect Micro:bit</button>
+    </div>
+
+    <div class="slider-container">
+        <label for="speedSlider">Speech Speed:</label>
+        <input type="range" id="speedSlider" min="0.1" max="1.0" step="0.05" value="0.5">
+        <span id="speedValue">0.5</span>
+    </div>
+
+    <div id="chat"></div>
+</div>
+
+<script>
+/* ======================================================
+   CANVAS
+====================================================== */
+const canvas = document.getElementById("wave");
+const ctx = canvas.getContext("2d");
+let w,h;
+function resize(){ w = canvas.width = canvas.offsetWidth; h = canvas.height = canvas.offsetHeight; }
+window.addEventListener("resize", resize); resize();
+
+let audioCtx, analyser, dataArray, source, audioEnabled=false;
+async function initAudio(){
+    audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    const stream = await navigator.mediaDevices.getUserMedia({audio:true});
+    source = audioCtx.createMediaStreamSource(stream);
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 2048;
+    dataArray = new Uint8Array(analyser.fftSize);
+    source.connect(analyser);
+    audioEnabled = true;
+}
+function getVolume(){
+    if(!audioEnabled) return 0;
+    analyser.getByteTimeDomainData(dataArray);
+    let sum=0;
+    for(let i=0;i<dataArray.length;i++){
+        const v=(dataArray[i]-128)/128;
+        sum+=v*v;
+    }
+    return Math.sqrt(sum/dataArray.length);
+}
+
+let mode="idle", t=0;
+function draw(){
+    ctx.clearRect(0,0,w,h);
+    ctx.strokeStyle="#38e8ff";
+    ctx.lineWidth=2;
+    ctx.beginPath();
+    const ampBase = mode==="idle"?2:mode==="listening"?6:20;
+    const amp = ampBase + getVolume()*180;
+    for(let x=0;x<w;x++){
+        const nx=x/w;
+        const y =
+            Math.sin(nx*10+t*0.04)*amp +
+            Math.sin(nx*25-t*0.06)*amp*0.5 +
+            Math.sin(nx*3+t*0.01)*amp*0.3;
+        ctx.lineTo(x,h/2+y);
+    }
+    ctx.stroke();
+    t++;
+    requestAnimationFrame(draw);
+}
+draw();
+
+/* ======================================================
+   DB & FUZZY
+====================================================== */
+let qaDB=[];
+fetch("db.json").then(r=>r.json()).then(d=>qaDB=d);
+
+function norm(t){ return t.toLowerCase().replace(/[^a-z0-9\sčćžđš]/g,"").split(/\s+/); }
+function sim(a,b){ const A=new Set(norm(a)), B=new Set(norm(b)); let c=0; A.forEach(w=>B.has(w)&&c++); return c/[...new Set([...A,...B])].length; }
+function answer(q){
+    let best=0,res="Ponovite, molim vas! Nisam razumeo pitanje.";
+    qaDB.forEach(e=>{
+        [e.question,...(e.alternatives||[]),...(e.tags||[])]
+        .forEach(k=>{
+            const s=sim(q,k);
+            if(s>best){best=s;res=e.answer;}
+        });
+    });
+    return best>0.2?res:res;
+}
+
+/* ======================================================
+   CHAT
+====================================================== */
+const chat=document.getElementById("chat");
+function addMsg(t,c){ 
+    const d=document.createElement("div"); 
+    d.className="msg "+c; 
+    d.textContent=t; 
+    chat.prepend(d); 
+}
+
+/* ======================================================
+   SYLLABLE COUNTER
+====================================================== */
+function countSyllables(word){
+    word=word.toLowerCase().trim();
+    if(word.length<=3) return 1;
+    word=word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/,'');
+    word=word.replace(/^y/,'');
+    const m=word.match(/[aeiouy]{1,2}/g);
+    return m?m.length:1;
+}
+
+/* ================= MICROBIT ================= */
+let uartTX=null;
+const UART_SERVICE="6e400001-b5a3-f393-e0a9-e50e24dcca9e";
+const UART_RX="6e400003-b5a3-f393-e0a9-e50e24dcca9e";
+
+microbitToggle.onclick=async()=>{
+    const dev=await navigator.bluetooth.requestDevice({
+        filters:[{namePrefix:"BBC micro:bit"}],
+        optionalServices:[UART_SERVICE]
+    });
+    const server=await dev.gatt.connect();
+    const service=await server.getPrimaryService(UART_SERVICE);
+    uartTX=await service.getCharacteristic(UART_RX);
+    microbitToggle.textContent="Micro:bit connected";
+};
+
+
+
+/* ======================================================
+   SPEECH & AUTO ANSWER
+====================================================== */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let rec=SR?new SR():null;
+let mic=true, timer=null;
+let conversationStarted=false;
+let lastQuestion="";
+
+if(rec){
+    rec.lang="hr-HR";
+    rec.continuous=true;
+
+    rec.onresult=e=>{
+        if(!mic) return;
+        const q=[...e.results].map(r=>r[0].transcript).join(" ").trim();
+        if(q.length===0) return;
+
+        if(!conversationStarted && q.toLowerCase().includes("zdravo")){
+            conversationStarted=true;
+        }
+        if(conversationStarted){
+            if(q !== lastQuestion){
+                lastQuestion = q;
+                addMsg(q,"user");
+                schedule(q);
+            }
+        }
+        if(q.toLowerCase().includes("hvala za sada")){
+            conversationStarted=false;
+            lastQuestion="";
+        }
+    };
+
+    rec.onend = ()=>{
+        // Ako recognition nehotice stane, restartuj ga kad smo u listening modu
+        if(mic && mode!=="speaking"){
+            console.log("SpeechRecognition end -> restarting");
+            try{ rec.start(); }catch(e){ console.warn("Restart failed:", e); }
+        }
+    };
+
+    initAudio().then(()=>rec.start());
+}
+
+const speedSlider=document.getElementById("speedSlider");
+const speedValue=document.getElementById("speedValue");
+speedSlider.oninput=()=>speedValue.textContent=speedSlider.value;
+
+function speak(text){
+    mode="speaking";
+    try{rec.stop();}catch(e){}
+    speechSynthesis.cancel();
+
+    const words=text.trim().split(/\s+/);
+    let totalSyllables=0;
+    words.forEach(w=>totalSyllables+=countSyllables(w));
+
+    const speechRate=parseFloat(speedSlider.value);
+    const BASE_SYLLABLES_PER_SECOND=5;
+    const speakTimeSec = totalSyllables / (BASE_SYLLABLES_PER_SECOND * speechRate);
+    const speakTimeRounded = speakTimeSec.toFixed(2);
+
+    console.log(`Syllables: ${totalSyllables}, Time: ${speakTimeRounded}s`);
+
+    if(uartTX){
+        const msg = `${totalSyllables}_${speakTimeRounded}\n`;
+        uartTX.writeValueWithResponse(new TextEncoder().encode(msg))
+             .catch(err => console.warn("BLE send failed", err));
+    }
+
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang="hr-HR";
+    u.rate=speechRate;
+    u.onend=()=>{
+        mode="listening";
+        if(mic){
+            setTimeout(()=>{
+                try{
+                    console.log("Restarting recognition after speech");
+                    rec.start();
+                }catch(e){
+                    console.warn("rec.start error", e);
+                }
+            },500);
+        }
+    };
+    speechSynthesis.speak(u);
+}
+
+function schedule(q){
+    mode="listening";
+    clearTimeout(timer);
+    timer=setTimeout(()=>{
+        const a=answer(q);
+        addMsg(a,"ai");
+        speak(a);
+    },500);
+}
+
+/* ======================================================
+   PAGE VISIBILITY (optional safety)
+====================================================== */
+document.addEventListener("visibilitychange", ()=>{
+    // Nemoj ništa rušiti kad tab izgubi fokus; samo loguj stanje
+    console.log("visibility:", document.visibilityState);
+    // Ako se recognition sam ugasi pri prelasku, onend handler će ga ponovo podići
+});
+</script>
+</body>
+</html>
