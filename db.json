@@ -1,81 +1,28 @@
+
+
 [
   {
-    "question": "Ko je napisao Gorski vijenac?",
-    "alternatives": ["Ko je autor Gorskog vijenca?", "Ko je napisao pesničko delo Gorski vijenac?"],
-    "tags": ["književnost", "Njegoš"],
-    "answer": "Njegoš, pesnik i vladika – pravi multitasker!"
-  },
-  {
-    "question": "Koliko iznosi zbir uglova u trouglu?",
-    "alternatives": ["Koji je zbir uglova u trouglu?", "Koliko stepeni imaju uglovi u trouglu?"],
-    "tags": ["matematika", "geometrija"],
-    "answer": "Zbir je 180 stepeni, kao krug isečen na pola!"
-  },
-  {
-    "question": "Ko je formulisao zakon gravitacije?",
-    "alternatives": ["Ko je otkrio gravitaciju?", "Ko je napisao zakon gravitacije?"],
-    "tags": ["fizika", "Newton"],
-    "answer": "Isak Njutn, jabuka mu je pala na glavu i sve objasnio!"
-  },
-  {
-    "question": "Koja je hemijska oznaka za natrijum?",
-    "alternatives": ["Kako se piše natrijum?", "Koja je formula za natrijum?"],
-    "tags": ["hemija", "elementi"],
-    "answer": "Na – kao 'Na-na' pesma, ali hemijska!"
-  },
-  {
-    "question": "Koja kost štiti mozak?",
-    "alternatives": ["Koja kost se nalazi u glavi?", "Koja kost čuva mozak?"],
-    "tags": ["biologija", "ljudsko telo"],
-    "answer": "Lobanja, moj tvrdi šlem!"
-  },
-  {
-    "question": "Koja je najviša planina na svetu?",
-    "alternatives": ["Koja planina je najviša?", "Kako se zove najviša planina?"],
-    "tags": ["geografija", "planine"],
-    "answer": "Mont Everest, planina koja voli da bude na vrhu!"
-  },
-  {
-    "question": "Ko je bio prvi srpski kralj?",
-    "alternatives": ["Ko je prvi kralj Srbije?", "Ko je bio prvi vladar Srbije?"],
-    "tags": ["istorija", "Srbija"],
-    "answer": "Stefan Prvovenčani, prvi sa krunom na glavi!"
-  },
-  {
-    "question": "Ko je naslikao Sunce i polje suncokreta?",
-    "alternatives": ["Ko je autor slike suncokreta?", "Ko je naslikao suncokrete?"],
-    "tags": ["likovno", "Van Gog"],
-    "answer": "Vincent van Gog, čovek koji je voleo žuto!"
-  },
-  {
-    "question": "Koji instrument ima dirke i pedale?",
-    "alternatives": ["Koji instrument ima klavijaturu?", "Koji instrument ima pedale?"],
-    "tags": ["muzičko", "instrumenti"],
-    "answer": "Klavir, moj veliki muzički prijatelj!"
-  },
-  {
-    "question": "Šta znači skraćenica CPU?",
-    "alternatives": ["Šta je CPU?", "Šta znači centralna jedinica?"],
-    "tags": ["informatika", "računari"],
-    "answer": "Central Processing Unit – mozak računara!"
-  },
-
-  {
     "question": "Zdravo!",
-    "alternatives": ["Ćao!", "Dobar dan!"],
-    "answer": "Zdravo, kako ti danas mogu pomoći?"
+    "alternatives": [
+      "Ćao!",
+      "Dobar dan!"
+    ],
+    "tags": [
+      "Opšta kultura"
+    ],
+    "answer": "Zdravo, kako ti mogu pomoći danas!"
   },
   {
     "question": "Hvala ti za sada!",
+    "alternatives": [
+      "Hvala!"
+    ],
+    "tags": [
+      "Opšta kultura"
+    ],
     "answer": "Nema na čemu!"
   },
   {
-    "question": "Koliko metara ima jedan kilometar?",
-    "alternatives": ["Koliko je jedan kilometar?", "Hiljadu metara je koliko kilometara?"],
-    "tags": ["tehnika", "matematika"],
-    "answer": "Jedan kilometar ima hiljadu metara."
-  },
-{
     "question": "Koji je glavni grad Srbije?",
     "alternatives": [
       "Glavni grad Srbije?",
@@ -96,5 +43,1716 @@
       "Geografija"
     ],
     "answer": "Procenjen broj stanovnika Srbije je oko 6,5 miliona stanovnika."
+  },
+  {
+    "question": "Koliko iznosi zbir uglova u trouglu?",
+    "alternatives": [
+      "Zbir uglova trougla?",
+      "Zbir uglova u trouglu?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Zbir uglova u trouglu iznosi 180 stepeni."
+  },
+  {
+    "question": "Šta je fotosinteza?",
+    "alternatives": [
+      "Kako biljke stvaraju hranu?",
+      "U kom procesu biljke koriste Sunčevu energiju?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Fotosinteza je proces u kojem biljke uz pomoć svjetlosti proizvode hranu i kiseonik."
+  },
+  {
+    "question": "Šta je simfonija?",
+    "alternatives": [
+      "Kako se zove veliko orkestarsko delo u više stavova"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Simfonija (duga, ozbiljna i ne dozvoljava aplauz između stavova)"
+  },
+  {
+    "question": "Koliko linija ima notni sistem?",
+    "alternatives": [
+      "Koliko linija pišemo note?",
+      "Gde note stoje da se ne pogube?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Pet linija (više nema jer bi bilo previše matematike)"
+  },
+  {
+    "question": "Šta je narodna muzika?",
+    "alternatives": [
+      "Kakvu muziku sviraš uz tamburaše?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Narodna muzika (puca u srcu, pogotovo na svadbama)"
+  },
+  {
+    "question": "Šta je zagrevanje pre fizičke aktivnosti?",
+    "alternatives": [
+      "Zašto se zagrevamo pre vežbanja?",
+      "Čemu služe vežbe zagrevanja?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Da se telo ne uvredi kad ga nateramo da trči bez najave."
+  },
+  {
+    "question": "Koliko traje jedna utakmica košarke?",
+    "alternatives": [
+      "Koliko minuta se igra košarkaška utakmica?",
+      "Vreme trajanja košarke je?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Dovoljno dugo da se umoriš, ali i da se žališ sudiji."
+  },
+  {
+    "question": "Šta je pravilno držanje tela?",
+    "alternatives": [
+      "Kako izgleda pravilno držanje tela?",
+      "Zašto je važno držati leđa pravo?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Da ne ličimo na upitnik dok hodamo."
+  },
+  {
+    "question": "Koji je najveći kontinent na Zemlji?",
+    "alternatives": [
+      "Koji kontinent zauzima najveću površinu?",
+      "Na kojem kontinentu ima „najviše mjesta za sve“?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Azija – kad pogledaš kartu, izgleda kao da je sve tu."
+  },
+  {
+    "question": "Koja rijeka je najduža na svijetu?",
+    "alternatives": [
+      "Koja rijeka se ne zaustavlja?",
+      "Gdje voda teče više od svih ostalih?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Nil – rijeka koja ne zna za umor."
+  },
+  {
+    "question": "Koji je najveći ocean?",
+    "alternatives": [
+      "Gdje ima najviše vode?",
+      "Koji ocean možeš pet puta obići i još ostane isti?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Tihi ocean – nema kraja… i bez obale."
+  },
+  {
+    "question": "Šta je ćelija?",
+    "alternatives": [
+      "Kako se zove osnovna jedinica građe i funkcije živih bića?",
+      "Od čega su građena sva živa bića?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Ćelija – mala, ali vrijedna, radi više nego učenik pred kontrolni."
+  },
+  {
+    "question": "Što proučava geografska kartografija?",
+    "alternatives": [
+      "Kako se zove znanost koja crta karte?",
+      "Tko zna crtati svijet na papiru?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Kartografija – majstori za skiciranje planeta."
+  },
+  {
+    "question": "Zašto je biološka raznovrsnost važna?",
+    "alternatives": [
+      "Zašto je raznovrsnost života dobra? ",
+      " Zašto ne bi svi organizmi trebali biti isti?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Jer bi priroda bila dosadna bez razlike."
+  },
+  {
+    "question": "Koja je uloga srca?",
+    "alternatives": [
+      "Šta pumpa krv kroz telo? ",
+      " Koji organ ne prestaje da radi?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Jer bi priroda bila dosadna bez razlike."
+  },
+  {
+    "question": "Koliko igrača ima jedna fudbalska ekipa?",
+    "alternatives": [
+      "Koliko fudbalera čini tim?",
+      "Broj igrača u fudbalu je?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Jedanaest, jer bi dvanaest već bila gužva."
+  },
+  {
+    "question": "Šta je kondicija?",
+    "alternatives": [
+      "Šta znači biti u dobroj kondiciji?",
+      "Kako nazivamo izdržljivost tela?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "To je kad možeš da trčiš bez dramatičnog hvatanja za pluća."
+  },
+  {
+    "question": "Zašto je važna hidratacija tokom vežbanja?",
+    "alternatives": [
+      "Zašto treba piti vodu dok vežbamo?",
+      "Šta se dešava ako ne pijemo vodu na treningu?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Da ne postanemo suva verzija sebe."
+  },
+  {
+    "question": "Koji je cilj istezanja nakon vežbanja?",
+    "alternatives": [
+      "Zašto se istežemo posle treninga?",
+      "Čemu služe vežbe istezanja?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Da sutradan možemo da hodamo bez stenjanja."
+  },
+  {
+    "question": "Šta je aerobna aktivnost?",
+    "alternatives": [
+      "Koje vežbe spadaju u aerobne?",
+      "Šta podrazumeva aerobni trening?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Vežbanje uz koje dišeš brzo, ali još uvek preživljavaš."
+  },
+  {
+    "question": "Koliko setova ima odbojkaška utakmica?",
+    "alternatives": [
+      "Do koliko setova se igra odbojka?",
+      "Koliki je maksimalan broj setova u odbojci?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Pet, jer više ne bi izdržali ni igrači ni publika."
+  },
+  {
+    "question": "Zašto je važno nositi sportsku opremu?",
+    "alternatives": [
+      "Čemu služi sportska oprema?",
+      "Zašto ne vežbamo u farmerkama?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Da se možemo slobodno kretati i ne cepati pantalone."
+  },
+  {
+    "question": "Šta je puls?",
+    "alternatives": [
+      "Kako se meri rad srca?",
+      "Šta pokazuje puls?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "To je ritam srca koji kaže koliko smo se preforsirali."
+  },
+  {
+    "question": "Koja je najviša planina na Zemlji?",
+    "alternatives": [
+      "Gdje se najviše penje?",
+      "Koji vrh se „ljuti“ na ostale planine?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Mount Everest – čak ni ptice ne lete toliko visoko."
+  },
+  {
+    "question": "Koji mišići rade pri trčanju?",
+    "alternatives": [
+      "Koje mišićne grupe su aktivne kod trčanja?",
+      "Šta najviše radi dok trčimo?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Skoro svi, a sutradan se svi i jave."
+  },
+  {
+    "question": "Zašto je važno baviti se sportom?",
+    "alternatives": [
+      "Koje su prednosti fizičke aktivnosti?",
+      "Zašto je sport zdrav?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Jer je bolje da se znojimo nego da se nerviramo."
+  },
+  {
+    "question": "Šta je fair-play?",
+    "alternatives": [
+      "Šta znači igrati pošteno?",
+      "Kako se ponaša sportski igrač?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "To je kad ne varaš, čak i kad sudija ne gleda."
+  },
+  {
+    "question": "Šta je hranidbeni lanac?",
+    "alternatives": [
+      "Kako se energija prenosi kroz ekosistem? ",
+      " Ko koga jede u prirodi?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Ko koga jede, i ko na kraju nestane."
+  },
+  {
+    "question": "Koliko traje poluvreme u fudbalu?",
+    "alternatives": [
+      "Vreme trajanja jednog poluvremena?",
+      "Koliko minuta traje poluvreme?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Tačno 45 minuta, taman da se umoriš."
+  },
+  {
+    "question": "Šta su razlagači?",
+    "alternatives": [
+      "Ko razgrađuje mrtve organizme? ",
+      " Ko se brine o prirodnom „odlaganju otpada“?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Komunalna služba u prirodi."
+  },
+  {
+    "question": "Koji je najhladniji kontinent?",
+    "alternatives": [
+      "Gdje zima nikad ne prestaje?",
+      "Koji kontinent ima ledeni „pozdrav“?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Antarktika – ledeni raj… ili pakao, ovisi kako gledaš."
+  },
+  {
+    "question": "Šta je koordinacija pokreta?",
+    "alternatives": [
+      "Kako nazivamo usklađenost pokreta?",
+      "Šta znači dobra koordinacija?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "To je kad se ne sapleteš o sopstvene noge."
+  },
+  {
+    "question": "Zašto je san važan za sportiste?",
+    "alternatives": [
+      "Kako san utiče na fizičku spremu?",
+      "Zašto se sportisti moraju odmarati?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Jer ni telo ne radi kad mu se stalno spava."
+  },
+  {
+    "question": "Šta proučava genetika?",
+    "alternatives": [
+      "Koja nauka se bavi nasleđivanjem osobina? ",
+      " Ko istražuje zašto ličimo na roditelje?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Nauka o tome zašto ličiš na roditelje, a ne na komšiju."
+  },
+  {
+    "question": "Što proučava demografija?",
+    "alternatives": [
+      "Koja znanost broji ljude?",
+      "Tko ima sve brojeve stanovništva u glavi?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Demografija – zna kad ješ i koliko ljudi to radi."
+  },
+  {
+    "question": "Šta je brzina u sportu?",
+    "alternatives": [
+      "Kako definišemo brzinu?",
+      "Šta znači biti brz u sportu?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "To je kad stigneš prvi, a ne pitaš kako."
+  },
+  {
+    "question": "Koji sport se igra loptom preko mreže?",
+    "alternatives": [
+      "U kom sportu se koristi mreža i lopta?",
+      "Koji sport ima servis i smeč?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Odbojka, gde lopta leti, a mi se bacamo."
+  },
+  {
+    "question": "Koja je uloga hlorofila?",
+    "alternatives": [
+      "Koji pigment daje biljkama zelenu boju? ",
+      " Zašto su biljke zelene?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Daje boju i moć da uhvati sunce."
+  },
+  {
+    "question": "Zašto je važno slušati nastavnika na času fizičkog?",
+    "alternatives": [
+      "Zašto poštujemo pravila na času?",
+      "Šta se dešava kad ne slušamo uputstva?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Da ne vežbamo u hitnoj pomoći."
+  },
+  {
+    "question": "Koji je najmanji kontinent?",
+    "alternatives": [
+      "Koji kontinent je „najmanji“ na svijetu?",
+      "Gdje ti možeš hodati od kraja do kraja za 5 minuta?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Australija – sve je tu: pustinje, gradovi i kanguri. U malom paketu."
+  },
+  {
+    "question": "Koji ocean nalazi se između Amerike i Europe?",
+    "alternatives": [
+      "Koji ocean je „most“ između kontinenata?",
+      "Koji ocean te poziva na surfanje i povijest?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Atlantski ocean – gdje je povijest plovila, a valovi stalno dolaze."
+  },
+  {
+    "question": "Koji je najveći otok na svijetu?",
+    "alternatives": [
+      "Koji ocean je „most“ između kontinenata?",
+      "Koji ocean te poziva na surfanje i povijest?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Grenland – otok koji je prešao sve granice otoka."
+  },
+  {
+    "question": "Šta je DNK?",
+    "alternatives": [
+      "Gde se čuvaju genetske informacije? ",
+      " Ko nosi podatke o nasleđu?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Biološki USB koji sadrži sve o tebi."
+  },
+  {
+    "question": "Koji organ u ljudskom telu omogućava disanje?",
+    "alternatives": [
+      "Kako se zove organ za disanje kod ljudi? ",
+      " Koji organ obavlja razmenu gasova u ljudskom organizmu?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Pluća."
+  },
+  {
+    "question": "Koji je najvažniji plin za disanje u atmosferi?",
+    "alternatives": [
+      "Koji plin koristimo za disanje? ",
+      " Koji plin se najviše koristi u procesu disanja?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Ugljen-dioksid."
+  },
+  {
+    "question": "Koji organ u ljudskom telu kontroliše sve telesne funkcije?",
+    "alternatives": [
+      "Koji organ u ljudskom telu kontroliše sve telesne funkcije?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Mozak."
+  },
+  {
+    "question": "Koji deo biljke apsorbuje vodu i hranljive materije iz zemlje?",
+    "alternatives": [
+      "Koji deo biljke uzima vodu iz zemlje? ",
+      " Koji organ biljke ima ulogu korena?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Koreni"
+  },
+  {
+    "question": "Sta su enzimi?",
+    "alternatives": [
+      "Koje supstance ubrzavaju hemijske reakcije u telu? ",
+      " Koje biološke molekule ubrzavaju procese u organizmu?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Molekule koje ubrzavaju hemijske reakcije"
+  },
+  {
+    "question": "Koji deo ljudskog tela je odgovoran za varenje hrane?",
+    "alternatives": [
+      "Koji organi pomažu u varenju hrane? ",
+      " Koji sistem omogućava razgradnju hrane?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Probavni sistem."
+  },
+  {
+    "question": "Koji organ u ljudskom telu transportuje krv?",
+    "alternatives": [
+      "Kako se krv prenosi kroz telo? ",
+      " Koji organ omogućava cirkulaciju u telu?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Srce"
+  },
+  {
+    "question": "Koje vrste organizama obavljaju fotosintezu?",
+    "alternatives": [
+      "Koje organizme karakteriše proizvodnja hrane pomoću svetlosti? ",
+      " Koje vrste koriste svetlost za proizvodnju hrane?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Biljke i neki mikroorganizmi."
+  },
+  {
+    "question": "Kako se zove proces kroz koji biljke gube vodu?",
+    "alternatives": [
+      "Kako biljke ispuštaju vodu u atmosferu? ",
+      " Koji je naziv procesa gubitka vode kod biljaka?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Transpiracija."
+  },
+  {
+    "question": "Šta je biološka vrsta?",
+    "alternatives": [
+      "Šta je osnovna jedinica klasifikacije organizama? ",
+      " Kako se naziva skup organizama koji imaju slične karakteristike?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Skup organizama koji se mogu međusobno razmnožavati i dati plodno potomstvo."
+  },
+  {
+    "question": "Koja je razlika između present simpla i continuous",
+    "alternatives": [
+      "Za šta se koristi present simple?",
+      "Kada koristimo present simple?"
+    ],
+    "tags": [
+      "Engleski jezik"
+    ],
+    "answer": "Present simple se koristi za navike i rutine,a present countinuos za događaje koji se dešavaju u trenutku."
+  },
+  {
+    "question": "Napravi negativnu rečenicu sa glagolom jesti?",
+    "alternatives": [
+      "napravi negativnu rečenicu sa past simple?",
+      "kako da napravimo negativnu rečenicu sa past simple?"
+    ],
+    "tags": [
+      "Engleski jezik"
+    ],
+    "answer": "She didnt eat breakfast today."
+  },
+  {
+    "question": "Napravi 3 rečenice koristeti glagol biti",
+    "alternatives": [
+      "napisi 3 rečenice sa budućim glagolom biti?",
+      "napravi mi rečenice sa glagolom biti."
+    ],
+    "tags": [
+      "Engleski jezik"
+    ],
+    "answer": "She will be at a party.They will be at school.She will be happy."
+  },
+  {
+    "question": "Šta je epitet?",
+    "alternatives": [
+      "Kako se naziva stalni ukrasni pridev?",
+      "Koja stilska figura opisuje imenicu"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Stilska figura"
+  },
+  {
+    "question": "Šta je imenica?",
+    "alternatives": [
+      "Koja vrsta reči imenuje bića i predmete?",
+      "Kako nazivamo reči za pojmove"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Vrsta reči"
+  },
+  {
+    "question": "Šta je narodna književnost?",
+    "alternatives": [
+      "",
+      "Kako se naziva književnost nastala usmenim putem?",
+      "Kako se drugačije zove usmena književnost"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Narodna književnost"
+  },
+  {
+    "question": "Šta je lirski subjekat?",
+    "alternatives": [
+      "Ko u pesmi izražava osećanja?",
+      "Ko govori u lirskom delu"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Govornik"
+  },
+  {
+    "question": "Šta je predikat?",
+    "alternatives": [
+      "Koji deo rečenice označava radnju?",
+      "Koji deo rečenice govori šta se radi"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Deo rečenice"
+  },
+  {
+    "question": "Šta je basna?|",
+    "alternatives": [
+      "Kako se naziva priča sa poukom?",
+      "Koja vrsta ima životinje kao likove"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Književna vrsta"
+  },
+  {
+    "question": "Šta je zaplet?",
+    "alternatives": [
+      "Gde počinje sukob u delu?",
+      "Koji deo radnje pokreće događaje"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Deo radnje"
+  },
+  {
+    "question": "Šta je naracija?",
+    "alternatives": [
+      "Kako se drugačije zove pripovedanje?",
+      "Koji postupak izlaže događaje"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Pripovedanje"
+  },
+  {
+    "question": "Šta je pravopis?",
+    "alternatives": [
+      "Koja oblast proučava pravilno pisanje?",
+      "Kako se naziva skup pravila pisanja"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Jezička oblast"
+  },
+  {
+    "question": "Šta je književni lik?",
+    "alternatives": [
+      "Ko učestvuje u radnji dela?",
+      "Kako se zovu junaci u delu"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Lik"
+  },
+  {
+    "question": "Koji je najmanji kontinent na svetu?",
+    "alternatives": [
+      "Koji kontinent ima najmanju površinu?",
+      "Na kom kontinentu se nalazi Australija?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Australija"
+  },
+  {
+    "question": "Koja je najduža reka u Evropi?",
+    "alternatives": [
+      "Koja reka se uliva u Kaspijsko jezero?",
+      "Koja reka protiče kroz Rusiju i najduža je u Evropi?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Volga"
+  },
+  {
+    "question": "Koji je najviši planinski vrh Evrope?",
+    "alternatives": [
+      "Gde se nalazi Mon Blan?",
+      "Koji vrh ima najveću nadmorsku visinu u Evropi?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Mon Blan"
+  },
+  {
+    "question": "Koje je najveće more u Evropi?",
+    "alternatives": [
+      "Koje more se nalazi između Evrope i Afrike?",
+      "Koje more ima najveću površinu u Evropi?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Sredozemno more"
+  },
+  {
+    "question": "Koja je najmnogoljudnija država Evrope?",
+    "alternatives": [
+      "Koja evropska država ima najveći broj stanovnika?",
+      "U kojoj evropskoj državi živi najviše ljudi?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Rusija"
+  },
+  {
+    "question": "Koja država ima oblik čizme?",
+    "alternatives": [
+      "",
+      "Koja se evropska država pruža u Sredozemno more?",
+      "Koja država se nalazi na Apeninskom poluostrvu?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Italija"
+  },
+  {
+    "question": "Koji je glavni grad Francuske?",
+    "alternatives": [
+      "U kom gradu se nalazi Ajfelov toranj?",
+      "Koji je politički centar Francuske?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Pariz"
+  },
+  {
+    "question": "Koji je najveći okean na Zemlji?",
+    "alternatives": [
+      "Koji okean se nalazi između Azije i Amerike?",
+      "Koji okean ima najveću površinu?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Tihi okean"
+  },
+  {
+    "question": "Koji je najtopliji klimatski pojas?",
+    "alternatives": [
+      "U kom klimatskom pojasu se nalazi ekvator?",
+      "Koji pojas ima najviše temperature tokom cele godine?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Tropski pojas"
+  },
+  {
+    "question": "Koje je najveće poluostrvo u Evropi?",
+    "alternatives": [
+      "de se nalaze Norveška i Švedska?",
+      "Koje poluostrvo se nalazi na severu Evrope?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Skandinavsko poluostrvo"
+  },
+  {
+    "question": "Koji je stepen uglova u trouglu?",
+    "alternatives": [
+      "Koliki je zbir uglova u svakom trouglu?",
+      "Šta je zbir unutrašnjih uglova u trouglu?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "180°"
+  },
+  {
+    "question": "Šta je celi broj?",
+    "alternatives": [
+      "Koji brojevi spadaju u cele brojeve?",
+      "Da li celi brojevi uključuju negativne brojeve?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Celi brojevi su pozitivni brojevi, negativni brojevi i nula."
+  },
+  {
+    "question": "Koja je razlika između prostog i složenog broja?",
+    "alternatives": [
+      "Šta je prosti broj?",
+      "Koji brojevi su složeni?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Prosti brojevi imaju tačno dva delitelja (1 i sebe), a složeni brojevi imaju više od dva delitelja."
+  },
+  {
+    "question": "Šta je to proporcionalnost?",
+    "alternatives": [
+      "Šta znači da su brojevi proporcionalni?",
+      "Kako prepoznajemo proporcionalne brojeve?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Proporcionalnost je odnos između dva razlomka ili broja koji je jednak."
+  },
+  {
+    "question": "Šta je to četvorougao?",
+    "alternatives": [
+      "Kako definišemo četvorougao?",
+      "Koliko strana ima četvorougao?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Četvorougao je geometrijski oblik sa četiri strane i četiri ugla."
+  },
+  {
+    "question": "Koja je formula za površinu kruga?",
+    "alternatives": [
+      "Kako se računa površina kruga?",
+      "Koji je izraz za površinu kruga?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Površina kruga je P=π⋅r2P = \\pi \\cdot r^2P=π⋅r2, gde je rrr poluprečnik."
+  },
+  {
+    "question": "Šta predstavlja zapremina kvadra?",
+    "alternatives": [
+      "Kako se računa zapremina kvadra?",
+      "Kolika je zapremina kvadra sa stranicama a, b i c?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Zapremina kvadra je V=a⋅b⋅c."
+  },
+  {
+    "question": "Koja je razlika između pravog i tupog ugla?",
+    "alternatives": [
+      "Kako se razlikuju pravi i tupi ugao?",
+      "Koliki su pravi i tupi uglovi?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Pravi ugao ima 90°, a tupi ugao je veći od 90° ali manji od 180°."
+  },
+  {
+    "question": "Šta je to pravi ugao?",
+    "alternatives": [
+      "Koliki je pravi ugao?",
+      "Kako izgledaju pravi uglovi?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Pravi ugao ima vrednost od 90°."
+  },
+  {
+    "question": "Šta je kvadratni koren broja?",
+    "alternatives": [
+      "Kako se računa kvadratni koren?",
+      "Šta znači koren iz 16​?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Kvadratni koren broja je broj koji, kada se pomnoži sam sa sobom, daje originalni broj."
+  },
+  {
+    "question": "Koji je najpoznatiji kompozitor iz perioda klasicizma?",
+    "alternatives": [
+      "Ko je bio ključni kompozitor klasicizma?",
+      "Koji kompozitor je najpoznatiji iz perioda klasicizma?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Ludwig van Beethoven."
+  },
+  {
+    "question": "Koja je osnovna razlika između simfonije i sonate?",
+    "alternatives": [
+      "Šta je simfonija u odnosu na sonatu?",
+      "Koja je razlika između simfonije i sonate?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Simfonija je orkestralno delo, a sonata je instrumentalno delo za solistu ili manji ansambl."
+  },
+  {
+    "question": "Šta je to tonalitet?",
+    "alternatives": [
+      "Šta označava tonalitet u muzici?",
+      "Koji je značaj tonaliteta u muzičkom delu?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Tonalitet označava ključ u kojem je napisano muzičko delo."
+  },
+  {
+    "question": "Šta je to harmonija?",
+    "alternatives": [
+      "Šta predstavlja harmonija u muzici?",
+      "Kako se definiše harmonija?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Harmonija je kombinacija nota koje zvuče istovremeno."
+  },
+  {
+    "question": "Koji instrument je najpoznatiji duvački instrument u orkestru?",
+    "alternatives": [
+      "Šta karakteriše baroknu muziku?",
+      "Kako izgleda muzika iz perioda baroka?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Barok je period u muzici sa bogatom ornamentikom i složenim kontrastima."
+  },
+  {
+    "question": "Koji su osnovni delovi sonate?",
+    "alternatives": [
+      "Šta je kvart u odnosu na kvintu?",
+      "Koliko polutona ima kvart, a koliko kvinta?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Kvart je interval od četiri polutona, a kvinta od pet polutona."
+  },
+  {
+    "question": "Koje su osnovne karakteristike muzike iz perioda romantizma?",
+    "alternatives": [
+      "Koje su glavne komponente sonate?",
+      "Kako su strukturisani delovi sonate?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Exposition, development, recapitulation."
+  },
+  {
+    "question": "Koja je uloga dirigenta u orkestru?",
+    "alternatives": [
+      "Kako dirigent utiče na orkestar?",
+      "Šta radi dirigent u orkestru?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Dirigent vodi orkestar, daje tempo i upravlja interpretacijom muzike."
+  },
+  {
+    "question": "Objasni razliku između mase i težine.",
+    "alternatives": [
+      "Koja je razlika između mase i težine?",
+      "Šta je masa, a šta težina?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Masa je količina materije u telu, a težina je sila kojom telo deluje na potporu usled gravitacije."
+  },
+  {
+    "question": "Šta je sila i kako je merimo?",
+    "alternatives": [
+      "Šta je to sila?",
+      "Kako se meri sila?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Sila je uticaj na telo koji može da izazove promenu njegovog kretanja. Merenje: u njutonima (N)."
+  },
+  {
+    "question": "Koja je razlika između brzine i ubrzanja?",
+    "alternatives": [
+      "Šta je brzina, a šta ubrzanje?",
+      "Koja je razlika između brzine i ubrzanja?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Šta je brzina, a šta ubrzanje? | Koja je razlika između brzine i ubrzanja?"
+  },
+  {
+    "question": "Šta predstavlja zakon očuvanja energije?",
+    "alternatives": [
+      "Koji je osnovni princip zakona očuvanja energije?",
+      "Šta kaže zakon očuvanja energije?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Energija se ne može stvoriti ni uništiti, samo se može pretvoriti iz jednog oblika u drugi."
+  },
+  {
+    "question": "Objasni šta je to sila trenja i kako se ona pojavljuje.",
+    "alternatives": [
+      "Šta je trenje?",
+      "Kako nastaje sila trenja?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Trenje je sila koja se suprotstavlja kretanju tela i nastaje zbog neravnina na površinama koje se dodiruju."
+  },
+  {
+    "question": "Kako se vrši prenos toplote?",
+    "alternatives": [
+      "ta je trenje?",
+      "Kako nastaje sila trenja?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Trenje je sila koja se suprotstavlja kretanju tela i nastaje zbog neravnina na površinama koje se dodiruju."
+  },
+  {
+    "question": "Šta je to električna struja i kako se meri?",
+    "alternatives": [
+      "Šta predstavlja električna struja?",
+      "Kako se meri električna struja?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Električna struja je kretanje naelektrisanih čestica. Merenje: u amperima (A)."
+  },
+  {
+    "question": "Objasni pojam električnog napona.",
+    "alternatives": [
+      "Šta je električni napon?",
+      "Kako definišemo električni napon?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": ": Električni napon je razlika električnog potencijala između dve tačke. Merenje: u voltima (V)."
+  },
+  {
+    "question": "Navedite osnovne zakonitosti magneta.",
+    "alternatives": [
+      "Koje su osobine magneta?",
+      "Kako funkcioniše magnet?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Magnet ima dva pola (severni i južni). Slični polovi se odbijaju, suprotni privlače."
+  },
+  {
+    "question": "Kako funkcionišu leća i koje su vrste leća?",
+    "alternatives": [
+      "Šta je leća?",
+      "Koje vrste leća postoje?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "eća je optički element koji menja pravac svetlosnih zraka. Vrste leća su konveksne i konkavne."
+  },
+  {
+    "question": "Koji uređaj koristiš da napišeš “Ne znam šta pišem”?",
+    "alternatives": [
+      ""
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Tastatura | Taj „čarobni“ uređaj što mi stalno daje autocorrect."
+  },
+  {
+    "question": "Koji softver omogućava surfanje internetom?",
+    "alternatives": [
+      " Bez njega bi bio kao ribica bez vode?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Web browser | Tvoj privatni čamac na internetu!"
+  },
+  {
+    "question": "Koja mreža je brža od tvoje brzine govora kad imaš 10 tabova otvorenih?",
+    "alternatives": [
+      ""
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Internet | Tvoj najbolji prijatelj kad su ti potrebni odgovori… i glavni razlog zašto ne znaš kada je \"kraj radnog dana\"."
+  },
+  {
+    "question": "Šta je HTML?",
+    "alternatives": [
+      "Nije to naziv za novi desert, obećavam!"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Jezik za web stranice | Onaj stvarni kod iza svih tih fancy web stranica"
+  },
+  {
+    "question": "Koja je funkcija grafičkog procesora (GPU)?",
+    "alternatives": [
+      "Da tvoje igre ne izgledaju kao nešto iz 90-ih, ali i dalje podsećaju na to?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Obrada grafike | Renderira slike, jer tvoje igre zaslužuju da budu bolje nego tvoj Wi-Fi signal"
+  },
+  {
+    "question": "Šta je IP adresa?",
+    "alternatives": [
+      "Tvoj broj na internetu, ali bez prava na privatnost?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Jedinstveni broj | Broj koji bi zaboravio, ali internet ga nikad ne zaboravi."
+  },
+  {
+    "question": "Koji uređaj prikazuje tvoje \"umjetničke radove\"?",
+    "alternatives": [
+      ""
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Monitor | Taj ekran na kojem su svi tvoji najbolji i najgori trenuci zabilježeni."
+  },
+  {
+    "question": "Šta je URL?",
+    "alternatives": [
+      "Tvoja adresa na internetu, ali ako se pogrešno ukucaš, završavaš u \"404\" zemlji."
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Adresa web stranice | Tvoj „super link“ za istraživanje internetskih prostranstava."
+  },
+  {
+    "question": "Koji je glavni zadatak antivirusnog programa?",
+    "alternatives": [
+      "Da te zaštiti od virusa, kao superheroj za računar!"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Zaštita od virusa | Da računar ne postane kuća za sve vrste nepozvanih gostiju."
+  },
+  {
+    "question": "Šta je elektronska pošta?",
+    "alternatives": [
+      "Brža je od obične pošte, ali je još uvek polako odgovaraš kad nemaš vremena?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "E-mail | Kad trebaš nešto poslati brzo, ali se 5 dana pitaš da li je stiglo."
+  },
+  {
+    "question": "Koji su osnovni delovi računara?",
+    "alternatives": [
+      "Koji su ključni delovi računarskog sistema?",
+      "Koje komponente čine računar?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Procesor, memorija, hard disk, grafička kartica."
+  },
+  {
+    "question": "Šta je to inženjering?",
+    "alternatives": [
+      "Kako inženjering utiče na tehnologiju?",
+      "Šta obuhvata inženjering u tehnologiji?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Primena naučnih i matematičkih principa za rešavanje problema."
+  },
+  {
+    "question": "Koji su najpoznatiji oblici obnovljivih izvora energije?",
+    "alternatives": [
+      "Koje energije dolaze iz prirodnih izvora?",
+      "Koji su oblici obnovljivih izvora energije?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Sunčeva, vetro, hidro, geotermalna energija."
+  },
+  {
+    "question": "Šta je to mehanička energija?",
+    "alternatives": [
+      "Kako se definiše mehanička energija?",
+      "Šta čini mehaničku energiju?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Energija koja se javlja kao rezultat kretanja ili pozicije objekta."
+  },
+  {
+    "question": "Šta je to 3D štampanje?",
+    "alternatives": [
+      "Kako funkcioniše 3D štampač?",
+      "Šta je proces 3D štampanja?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Tehnologija koja omogućava izradu objekata sloj po sloj."
+  },
+  {
+    "question": "Šta je to biomasa?",
+    "alternatives": [
+      "Koji materijali se koriste za proizvodnju biomasne energije?",
+      "Šta je biomasa u kontekstu energije?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Materijali biološkog porekla koji se koriste kao izvor energije."
+  },
+  {
+    "question": "Šta je to automatizacija?",
+    "alternatives": [
+      "Kako se vrši automatizacija u industriji?",
+      "Šta označava automatizacija u tehnologiji?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Proces kojim se mašine i uređaji koriste za obavljanje poslova bez ljudske intervencije."
+  },
+  {
+    "question": "Šta je to reciklaža?",
+    "alternatives": [
+      "Kako se recikliraju materijali?",
+      "Šta podrazumeva proces reciklaže?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Proces ponovne upotrebe materijala."
+  },
+  {
+    "question": "Šta je to električni krug?",
+    "alternatives": [
+      "Kako funkcioniše električni krug?",
+      "Šta je osnovna funkcija električnog kruga?"
+    ],
+    "tags": [
+      "Tehnika i tehnologija"
+    ],
+    "answer": "Sistem u kojem električna energija teče kroz provodnike."
+  },
+  {
+    "question": "Koja je osnovna jedinica materije?",
+    "alternatives": [
+      "Šta je najmanja čestica koja čini materiju?",
+      "Kako se zove osnovni gradivni element svih supstanci?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Atom."
+  },
+  {
+    "question": "Koja su tri osnovna stanja materije?",
+    "alternatives": [
+      "Koja su tri osnovna agregatna stanja?",
+      "Kako se zovu osnovna stanja materije?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Čvrsto, tečno, gasovito."
+  },
+  {
+    "question": "Šta je hemijska reakcija?",
+    "alternatives": [
+      "Šta se dešava kada se hemikalije mešaju?",
+      "Kako se zove proces u kojem se formiraju nove supstance?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Proces u kojem se menjaju hemijska svojstva supstanci i formiraju nove."
+  },
+  {
+    "question": "Šta je molekul?",
+    "alternatives": [
+      "Kako se zove spoj dva ili više atoma?",
+      "Šta je najmanja čestica supstance koja zadržava njena svojstva?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Spoj dva ili više atoma."
+  },
+  {
+    "question": "Šta je pH vrednost?",
+    "alternatives": [
+      "Kako se meri kiselost ili bazičnost rastvora? ",
+      " Koja vrednost pokazuje da li je supstanca kisela ili bazna?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Mera kiselosti ili bazičnosti rastvora."
+  },
+  {
+    "question": "Koji je osnovni sastojak vazduha?",
+    "alternatives": [
+      "Koji gas čini najveći deo vazduha?",
+      "Koji gas je najzastupljeniji u atmosferi?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Azot."
+  },
+  {
+    "question": "Koja je razlika između elementa i jedinjenja?",
+    "alternatives": [
+      "Šta je supstanca koja se sastoji samo od jednog tipa atoma? ",
+      " Koja je razlika između molekula sa jednim i više tipova atoma?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Element se sastoji od jednog tipa atoma, a jedinjenje od dva ili više različitih atoma."
+  },
+  {
+    "question": "Šta je oksidacija?",
+    "alternatives": [
+      "Koji je proces kada atom gubi elektrone?",
+      "Šta se dešava kada metal reaguje sa kiseonikom?"
+    ],
+    "tags": [
+      "Hemija"
+    ],
+    "answer": "Proces u kojem atom gubi elektrone, obično u reakciji sa kiseonikom."
+  },
+  {
+    "question": "Šta su imenice?",
+    "alternatives": [
+      "Kako da znam šta su imenice?"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Imenica je reč koja imenuje bića,predmete i osećaje."
+  },
+  {
+    "question": "Šta su jednačine?",
+    "alternatives": [
+      "Koje je rešenje za jednačine?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Jednačine su matematički zapisi u kojima su dva izraza jednaka i sadrže nepoznatu veličinu (npr. x)."
+  },
+  {
+    "question": "Šta je traktor?",
+    "alternatives": [
+      "Za čega služi traktor?"
+    ],
+    "tags": [
+      "Opšta kultura"
+    ],
+    "answer": "Traktor je poljoprivredna mašina."
+  },
+  {
+    "question": "Ko je osmislio glagoljicu?",
+    "alternatives": [
+      "Ko je tvorac glagoljice? "
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Glagoljicu su osmislili braća Ćiril i Metod."
+  },
+  {
+    "question": "Šta je fizika?",
+    "alternatives": [
+      "Kakva je fizika znanost?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Fizika je prirodna znanost."
+  },
+  {
+    "question": "Kako se piše negacija ne uz glagole?",
+    "alternatives": [
+      "Kako se piše ne uz glagole?"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Negacija ne se piše odvojeno od glagola."
+  },
+  {
+    "question": "Koja pismo koristimo u Srbiji?",
+    "alternatives": [
+      "Kako se zove?"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Pismo se zove ćirilica."
+  },
+  {
+    "question": "Koliko ima padeža u srpskom jeziku?",
+    "alternatives": [
+      "Nabroj padeže."
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Svi padeži u srpskom jeziku su nominativ,genitiv,dativ,akuzativ,vokativ,lokativ,instrumental."
+  },
+  {
+    "question": "Koja je osnovna merna jedinica za pređeni put?",
+    "alternatives": [
+      "Kako se zove merna jedinica za pređeni put?"
+    ],
+    "tags": [
+      "Fizika"
+    ],
+    "answer": "Osnovna merna jedinica za pređeni put je metar."
+  },
+  {
+    "question": "Koji je glavni grad Rumunije?",
+    "alternatives": [
+      "Koji grad je najmanji u Rumuniji?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Glavni grad rumunije je Bukurešt,"
+  },
+  {
+    "question": "Po čemu je poznat Paris?",
+    "alternatives": [
+      "Koji jezik se govori u Francuskoj?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Poznat je po umetnosti,a govori se Francuski"
+  },
+  {
+    "question": "Sa kojim slovom se označavaju racionalni brojevi?",
+    "alternatives": [
+      "Kako se zove gornji broj u razlomku?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "racionalni brojevi se oznacavavaju slovom Q,a gornji broj u razlomku brojilac."
+  },
+  {
+    "question": "Koji je glavni grad Švedske?",
+    "alternatives": [
+      "Koji je najveći grad u Švedskoj?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Najveci i glavni grad je Stockolm"
+  },
+  {
+    "question": "Šta znaci apsolutna zagrada?",
+    "alternatives": [
+      "Šta se dešava u njoj ako je broj negativan?"
+    ],
+    "tags": [
+      "Matematika"
+    ],
+    "answer": "Apsolutna zagrade je zagrada u kojoj se negativni brojevi pretvaraju u pozitivne a pozitivni ostaju."
+  },
+  {
+    "question": "Koji je glavni grad Francoske",
+    "alternatives": [
+      "Koji je najveći grad u Francuskoj?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Najveći grad je Paris i najveći je Paris."
+  },
+  {
+    "question": "Koliko misija ima u gta 5?",
+    "alternatives": [
+      "Koliko ima misija u Grand theft auto Online?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Misija ima u gta5 online 78"
+  },
+  {
+    "question": "Kako se zoveš?",
+    "alternatives": [
+      "Koje je tvoje ime?"
+    ],
+    "tags": [
+      "Dijalog"
+    ],
+    "answer": "Moje ime Matija."
+  },
+  {
+    "question": "Ko si ti?",
+    "alternatives": [
+      "Za čega ti služiš?"
+    ],
+    "tags": [
+      "Dijalog"
+    ],
+    "answer": "Ja sam edukativni robot koji pomaže učenicima u rešavanju zadataka."
+  },
+  {
+    "question": "Ko je Janja Garmbret?",
+    "alternatives": [
+      "Čime se bavi Janja Garmbret?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Bavi se planinarenjem."
+  },
+  {
+    "question": "Reši zagonetku:Kuca bez prozora?",
+    "alternatives": [
+      "Odgovori na zagonetku kuća bez prozora?"
+    ],
+    "tags": [
+      "Srpski jezik"
+    ],
+    "answer": "Odgovor je jaje."
+  },
+  {
+    "question": "Ko je sagradio Big Ben?",
+    "alternatives": [
+      "Koliko dugo postoji Big Ben?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Sagradio ju je Charles Barry."
+  },
+  {
+    "question": "Da li voliš da jedeš sarmu?",
+    "alternatives": [
+      "Sarma ti je omiljeno jelo?"
+    ],
+    "tags": [
+      "Opšta kultura"
+    ],
+    "answer": "Volim sarmu toliko da bih je jeo i za doručak, ručak i večeru"
+  },
+  {
+    "question": "Gde se nalaziš?",
+    "alternatives": [
+      "U kom mestu se nalazis?"
+    ],
+    "tags": [
+      "Opšta kultura"
+    ],
+    "answer": "U osnovnoj školi Matija Gubec Tavankut."
+  },
+  {
+    "question": "Ko je najboliji plivač?",
+    "alternatives": [
+      "Ko ima najviše medalja u plivanju?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Najbolji plivač je Milorad Čavić."
+  },
+  {
+    "question": "Da li Ljutovo ima pijacu?",
+    "alternatives": [
+      "Ljutovo ima pijacu?"
+    ],
+    "tags": [
+      "Dijalog"
+    ],
+    "answer": "Ne Ljutovo nema pijacu."
+  },
+  {
+    "question": "Ko je napiso Hajdi?",
+    "alternatives": [
+      "Kako se zove čovek koji je napisao Hajdi."
+    ],
+    "tags": [
+      "Dijalog"
+    ],
+    "answer": " Johana Špiri je napisala Hajdi."
+  },
+  {
+    "question": "Koliko kontinenata ima na Zemlji?",
+    "alternatives": [
+      "Koliko kontinenata postoji?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Postoji sedam kontinenata."
+  },
+  {
+    "question": "Da li voliš da jedeš ćecvape?",
+    "alternatives": [
+      "Voliš ćevape?"
+    ],
+    "tags": [
+      "Dijalog"
+    ],
+    "answer": "Naravno ja volim ćevape."
   }
 ]
+
