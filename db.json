@@ -2160,26 +2160,6 @@
       "Dijalog"
     ],
     "answer": "Rođen sam 1538., ali tačan datum se još uvek ne zna."
-  },
-  {
-    "question": "Kada si umro?",
-    "alternatives": [
-      "Kada si preminuo?"
-    ],
-    "tags": [
-      "Dijalog"
-    ],
-    "answer": "Da li sa tobom nešto nije uredu, pa upravo razgoaram sa tobom!"
-  },
-  {
-    "question": "Da li je Sara niger?",
-    "alternatives": [
-      "Sara je niger?"
-    ],
-    "tags": [
-      "Opšta kultura"
-    ],
-    "answer": "Možda, zavisi koga pitaš"
   }
 ]
 
