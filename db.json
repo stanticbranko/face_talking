@@ -2139,7 +2139,7 @@
     "tags": [
       "Opšta kultura"
     ],
-    "answer": "Ne"
+    "answer": "Jesam."
   },
   {
     "question": "Koja vrsta riječi imenuje bića i predmete?",
@@ -2160,6 +2160,246 @@
       "Dijalog"
     ],
     "answer": "Rođen sam 1538., ali tačan datum se još uvek ne zna."
+  },
+  {
+    "question": "Ko je nacrtao Mona Lizu?",
+    "alternatives": [
+      "Koje autor Mona Lize?"
+    ],
+    "tags": [
+      "Likovna kultura"
+    ],
+    "answer": "Leonardo da Vinči."
+  },
+  {
+    "question": "Koja ja je najveća planeta?",
+    "alternatives": [
+      "Kako se zove najveća planeta?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Najveća planeta je Jupiter."
+  },
+  {
+    "question": "Koliko ima kontinenata?",
+    "alternatives": [
+      "Koliki je ukupan broj kontinenata na zemlji?"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Sedam."
+  },
+  {
+    "question": "Ko je najbolji kud u Tavankutu?",
+    "alternatives": [
+      "Kako se zove kud u Tavankutu?"
+    ],
+    "tags": [
+      "Opšta kultura"
+    ],
+    "answer": "HKPD Matija Gubec"
+  },
+  {
+    "question": "Ko je najbolja odbojkašica u Turskoj?",
+    "alternatives": [
+      "Kako se zove najbolja odbojkašica u Turskoj?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Vargas"
+  },
+  {
+    "question": "Koji je glavni grad Turske?",
+    "alternatives": [
+      "Kako se zove glavni grad Turske?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Ankara"
+  },
+  {
+    "question": "Koliko imaš godina?",
+    "alternatives": [
+      "Dali si mlad ili star?"
+    ],
+    "tags": [
+      "Dijalog"
+    ],
+    "answer": "Mlada"
+  },
+  {
+    "question": "Koja planina je najveća na svetu?",
+    "alternatives": [
+      "Gde se nalazi najveća planina na svetu?"
+    ],
+    "tags": [
+      "Geografija"
+    ],
+    "answer": "Nalazi se u planinskom lancu Himalaja,na granici između Nepala i Kine i (Tibeta)."
+  },
+  {
+    "question": "Šta je Mezopotamija?",
+    "alternatives": [
+      "Objasni mi gde se nalazi Mezopotamija?"
+    ],
+    "tags": [
+      "Istorija"
+    ],
+    "answer": "Mezopotamija je dolina između dve reke Tigar i Eufrat."
+  },
+  {
+    "question": "\rŠto je biljci potrebno za rast?",
+    "alternatives": [
+      "Šta biljci treba za rast"
+    ],
+    "tags": [
+      "Biologija"
+    ],
+    "answer": "Svetlost,voda i sunce"
+  },
+  {
+    "question": "Što rade pluća?",
+    "alternatives": [
+      "Šta pluća rade,i zašto su nam ona bitna"
+    ],
+    "tags": [
+      ""
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Koji deo štiti mozak",
+    "alternatives": [
+      "Koji dio tijela štiti mozak?"
+    ],
+    "tags": [
+      ""
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Kako se zvao najpoznatiji vladar Makedonije u starom veku?",
+    "alternatives": [
+      "Ime njpoznatijeg vladara Makedonije u starom veku"
+    ],
+    "tags": [
+      "Istorija"
+    ],
+    "answer": "Aleksandar Veliki"
+  },
+  {
+    "question": "Kako se zvao prvi rimski car?",
+    "alternatives": [
+      "Ime prvog rimskog cara"
+    ],
+    "tags": [
+      "Istorija"
+    ],
+    "answer": "Avgust"
+  },
+  {
+    "question": "Kako se zvala država u kojoj je nastala demokratija?",
+    "alternatives": [
+      "Ime države gde je nastala demokratija"
+    ],
+    "tags": [
+      "Istorija"
+    ],
+    "answer": "Grčka (Atina)"
+  },
+  {
+    "question": "Sta je računar?",
+    "alternatives": [
+      "Čemu služi računar?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Računar je elektronski uređaj za obradu podataka."
+  },
+  {
+    "question": "Kako se zove program za pisanje teksta?",
+    "alternatives": [
+      "Koji program koristimo za pisanje dokumenata?"
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Tekst procesor."
+  },
+  {
+    "question": "Kako se zove uređaj kojim unosimo slova u računar?",
+    "alternatives": [
+      "Tastatura."
+    ],
+    "tags": [
+      "Informatika i računarstvo"
+    ],
+    "answer": "Kojim uređajem kucamo tekst na računaru?"
+  },
+  {
+    "question": "Koji instrunent ima dirke?",
+    "alternatives": [
+      "Koji je naj poznatiji instrument sa dirkama?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Klavir"
+  },
+  {
+    "question": "Koliko linija ima u notnom sistemu?",
+    "alternatives": [
+      "koliko ima linija u jednom notnom sistemu?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Notne linije"
+  },
+  {
+    "question": "Koji je osnovni instrument u orkestru?",
+    "alternatives": [
+      "Koji instrunent ima četiri žice i svira?"
+    ],
+    "tags": [
+      "Muzička kultura"
+    ],
+    "answer": "Violina"
+  },
+  {
+    "question": "Koji je osnovni cilj fizičkog vaspitanja?",
+    "alternatives": [
+      "Zašto je važno pohađati časove fizičkog vaspitanja?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Razvijanje zdravlja i fizičkih sposobnosti."
+  },
+  {
+    "question": "Koja oprema je potrebna za čas fizičkog?",
+    "alternatives": [
+      "Šta treba obući za bezbedno vežbanje na času fizičkog?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Patike, trenerka ili šorts i majica."
+  },
+  {
+    "question": "Koje su vrste trčanja?",
+    "alternatives": [
+      "Kako delimo trčanje prema dužini staze?"
+    ],
+    "tags": [
+      "Fizičko i zdravstveno vaspitanje"
+    ],
+    "answer": "Kratko, srednje i dugo trčanje."
   }
 ]
 
